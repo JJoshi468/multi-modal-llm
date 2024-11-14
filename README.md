@@ -1,15 +1,12 @@
-# Multimodal Image-to-Text Analyzer
+# Multimodal Analyzer using Langchain
 
 A robust solution for extracting and analyzing text content from images using state-of-the-art multimodal large language models.
 
 ## Features
 
 - Image text extraction with high accuracy
-- Support for multiple image formats (PNG, JPEG, TIFF, WebP)
+- Support for multiple image formats (PNG, JPEG)
 - Multi-language text recognition
-- Structured output in JSON format
-- Batch processing capabilities
-- Easy-to-use REST API
 
 ## Installation
 
