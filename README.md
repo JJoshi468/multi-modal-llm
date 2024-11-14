@@ -1,6 +1,6 @@
-# Multimodal Analyzer using Langchain
+# Multimodal Analyzer Using Langchain
 
-A robust solution for extracting and analyzing text content from images using state-of-the-art multimodal large language models.
+A robust solution for extracting and analyzing text content from images and pdfs using state-of-the-art multimodal large language models.
 
 ## Features
 
@@ -23,45 +23,6 @@ pip install langchain langchain-community langchain-huggingface
 - Tesseract
 - pytesseract (set path from code)
 
-
-
-## Usage Examples
-
-### Basic Text Extraction
-```python
-from multimodal_analyzer import ImageAnalyzer
-
-analyzer = ImageAnalyzer()
-
-# Extract text from image
-result = analyzer.extract_text("receipt.jpg")
-print(result.text)
-```
-
-### Advanced Usage with Custom Settings
-```python
-analyzer = ImageAnalyzer(
-    model_name="multimodal-llm-large",
-    device="cuda",
-    confidence_threshold=0.8
-)
-
-result = analyzer.extract_text(
-    "document.png",
-    return_confidence=True,
-    return_bounding_boxes=True
-)
-```
-
-## API Reference
-
-### ImageAnalyzer Class
-
-#### Methods
-
-- `extract_text(image_path: str, **kwargs) -> TextResult`
-- `batch_process(image_paths: List[str], **kwargs) -> List[TextResult]`
-- `analyze_layout(image_path: str) -> LayoutResult`
 
 #### Parameters
 
